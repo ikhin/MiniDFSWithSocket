@@ -39,7 +39,6 @@ class MultiClient(Multisocket):
             return
         parser = Parser()
         cmd_str = input("MiniDFS> ")
-        cmd_str = "put ptb.wrd"
         parser.judge_cmd(cmd_str)
         self.request = parser.data
         self.recv_count = 0
